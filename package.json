@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "github": "ng build --prod --output-path docs --base-href 'portfolio' && git commit -am 'Build to Github Page' && git push"
+    "github": "ng build --prod --output-path docs && git commit -am 'Build to Github Page' && git push"
   },
   "private": true,
   "dependencies": {
