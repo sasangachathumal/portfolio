@@ -54,4 +54,4 @@ jobs:
         run:  npm install
 
       - name: deploy to github pages
-        run:  ng build --prod --output-path docs --base-href 'portfolio' && git commit -am 'Build to Github Page' && git push
+        run:  node_modules/.bin/ng build --prod --output-path docs --base-href 'portfolio' && git commit -am 'Build to Github Page' && git push
