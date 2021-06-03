@@ -55,7 +55,7 @@ jobs:
 
       - name: build to github pages
         run:  |
-          node_modules/.bin/ng build --prod --output-path docs --base-href 'portfolio'
+          node_modules/.bin/ng build --prod --output-path docs --base-href 'https://sasangachathumal.github.io/portfolio/'
 
       - name: setup git config
         run:  |
