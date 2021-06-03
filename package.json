@@ -1,13 +1,14 @@
 {
   "name": "sasanga-chathumal",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "githubBuild": "ng build --prod --output-path docs --base-href 'portfolio' && git commit -am 'Build to Github Page' && git push"
   },
   "private": true,
   "dependencies": {
