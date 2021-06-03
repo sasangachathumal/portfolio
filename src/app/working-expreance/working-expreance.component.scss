@@ -1,0 +1,41 @@
+.working-expreance {
+  font-family: "eurostile", sans-serif;
+  padding: 4rem 1.5rem;
+  .title {
+    margin-bottom: 2rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+  .exp-card {
+    width: 35% !important;
+    padding: 12px;
+    border: 2px solid mediumturquoise;
+    box-shadow: 5px 6px 17px 1px rgb(0 0 0 / 10%);
+    .card-body {
+      .title-containr {
+        .title {
+          margin-bottom: 0;
+          font-weight: 800;
+          letter-spacing: 1px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+        }
+        .company-logo-container {
+          height: 21rem;
+          .company-logo {
+            margin-top: 2rem;
+            width: 80%;
+            margin-bottom: 2rem;
+            &.populo {
+              width: 40%;
+            }
+          }
+        }
+      }
+      .detail-containr {
+        h5 {
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

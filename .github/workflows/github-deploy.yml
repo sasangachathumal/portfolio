@@ -1,0 +1,57 @@
+# GitHub Actions WorkFlow Name
+
+name: sasanga portfolio deploy
+
+#Event Trigger for this Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ 'release' ]
+
+#Jobs to perform based on event occurred
+
+jobs:
+  npm-publish:
+    name: portfolio-deploy
+    runs-on: ubuntu-latest
+
+    # Steps to execute in this job
+    steps:
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
+
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        env:
+          cache-name: cache
+        with:
+          # npm cache files are stored in `~/.npm` on Linux/macOS
+          path: |
+            ~/.npm
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+
+      - name: Install dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run:  npm install
+
+      - name: deploy to github pages
+        run:  ng build --prod --output-path docs --base-href 'portfolio' && git commit -am 'Build to Github Page' && git push
