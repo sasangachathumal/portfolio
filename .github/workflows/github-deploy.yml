@@ -53,5 +53,16 @@ jobs:
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run:  npm install
 
-      - name: deploy to github pages
-        run:  ng build --prod --output-path docs --base-href 'portfolio' && git commit -am 'Build to Github Page' && git push
+      - name: build to github pages
+        run:  |
+          node_modules/.bin/ng build --prod --output-path docs --base-href 'portfolio'
+
+      - name: setup git config
+        run:  |
+          git config user.name "sasangachathumal"
+          git config user.email ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: commit changes
+        run:  |
+          git commit -am 'Build to Github Page'
+          git push origin release
