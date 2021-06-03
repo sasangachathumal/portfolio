@@ -62,8 +62,7 @@ jobs:
           git config user.name "sasangachathumal"
           git config user.email ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
-      - name: setup git config
+      - name: commit changes
         run:  |
-          git add *
-          git commit -m 'Build to Github Page'
+          git commit -am 'Build to Github Page'
           git push origin release
