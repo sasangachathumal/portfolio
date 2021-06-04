@@ -62,12 +62,13 @@ jobs:
           git config user.name "sasangachathumal"
           git config user.email ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
-      - name: check is there ny changes
-        uses: technote-space/get-diff-action@v4
-        id: check-changes
+      # - name: check is there ny changes
+      #   uses: technote-space/get-diff-action@v4
+      #   id: check-changes
 
       - name: commit changes
         if: steps.check-changes.outputs.diff
         run:  |
+          git add .
           git commit -am 'Build to Github Page'
           git push origin release
