@@ -63,7 +63,7 @@ jobs:
           git config user.email ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: check is there ny changes
-      - uses: technote-space/get-diff-action@v4
+        uses: technote-space/get-diff-action@v4
         id: check-changes
 
       - name: commit changes
