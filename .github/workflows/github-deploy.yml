@@ -62,7 +62,13 @@ jobs:
           git config user.name "sasangachathumal"
           git config user.email ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
+      - name: check is there ny changes
+        id: check-changes
+        run:  |
+          git diff
+
       - name: commit changes
+        if: steps.check-changes.outputs.diff
         run:  |
           git commit -am 'Build to Github Page'
           git push origin release
