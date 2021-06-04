@@ -67,7 +67,6 @@ jobs:
       #   id: check-changes
 
       - name: commit changes
-        if: steps.check-changes.outputs.diff
         run:  |
           git add .
           git commit -am 'Build to Github Page'
