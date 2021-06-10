@@ -69,5 +69,5 @@ jobs:
       - name: commit changes
         run:  |
           git add .
-          git commit -am 'Build to Github Page'
-          git push origin release
+          git commit -am 'Build Ready to release :)'
+          git push origin trunk
