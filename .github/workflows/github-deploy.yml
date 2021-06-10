@@ -55,14 +55,19 @@ jobs:
 
       - name: build to github pages
         run:  |
-          node_modules/.bin/ng build --prod --output-path docs --base-href 'portfolio'
+          node_modules/.bin/ng build --prod --output-path docs --base-href 'https://sasangachathumal.github.io/portfolio/'
 
       - name: setup git config
         run:  |
           git config user.name "sasangachathumal"
           git config user.email ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
+      # - name: check is there ny changes
+      #   uses: technote-space/get-diff-action@v4
+      #   id: check-changes
+
       - name: commit changes
         run:  |
+          git add .
           git commit -am 'Build to Github Page'
           git push origin release
