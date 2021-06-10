@@ -7,7 +7,7 @@ name: sasanga portfolio deploy
 on:
   workflow_dispatch:
   push:
-    branches: [ 'release' ]
+    branches: [ 'trunk' ]
 
 #Jobs to perform based on event occurred
 
