@@ -1,6 +1,6 @@
 {
   "name": "sasanga-chathumal",
-  "version": "1.0.1",
+  "version": "1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
