@@ -1,27 +1,19 @@
-# SasangaChathumal
+# Hi there, 👋
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0.
+I'm **Sasanga chathumal**, Front-end developer from Sri lanka and have 4+ years experience in software development. Currently working at [Practera](https://practera.com/) as a software developer.
 
-## Development server
+- 🌱  I’m currently learning React and Flutter.
+- 💬  Ask me about anything, I am happy to help.
+- 📫  How to reach me: chathumal.sasanga02@gmail.com
+- ⚡ Fun fact: I love to draw and [Producing Music][musicYT]
+- 📝 [Resume](https://drive.google.com/file/d/1tM7VKt0HM0wCCKClFwoHlAPlGXmqHKKO/view)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Connect with me
 
-## Code scaffolding
+[<code><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/linkedin.svg" alt="sasanga chathumal" height="25"/></code>][linkedin] [<code><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/twitter.svg" alt="sasangachathum1" height="25"/></code>][twitter] [<code><img src='https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/facebook.svg' height="25"></code>][facebook] [<code><img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/instagram.svg" height="25" /></code>][instagram]
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[musicYT]: https://www.youtube.com/channel/UCG6U1QEg7yCvQBuMHMZC_bQ
+[twitter]: https://twitter.com/SasangaChathum1
+[instagram]: https://www.instagram.com/sasanga_chathumal/
+[linkedin]: https://www.linkedin.com/in/sasanga-chathumal/
+[facebook]: https://www.facebook.com/sasanga.chathumal/
