@@ -10,6 +10,7 @@ import { WorkingExpreanceComponent } from './working-expreance/working-expreance
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { DevOverviewComponent } from './dev-overview/dev-overview.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     WorkingExpreanceComponent,
     FooterComponent,
     HomePageComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    DevOverviewComponent
   ],
   imports: [
     BrowserModule,
