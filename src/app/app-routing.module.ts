@@ -3,7 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent}
+  {
+    path: '',
+    loadChildren: './home-page/home-page.module#HomePageModule',
+    data: {animation: 'HomePage'}
+  },
+  {
+    path: 'dev',
+    loadChildren: './dev-overview/dev-overview.module#DevOverviewModule',
+    data: {animation: 'DevPage'}
+  }
 ];
 
 @NgModule({
