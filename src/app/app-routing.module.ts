@@ -12,6 +12,11 @@ const routes: Routes = [
     path: 'dev',
     loadChildren: './dev-overview/dev-overview.module#DevOverviewModule',
     data: {animation: 'DevPage'}
+  },
+  {
+    path: 'youtube',
+    loadChildren: './youtube-overview/youtube-overview.module#YoutubeOverviewModule',
+    data: {animation: 'youtubePage'}
   }
 ];
 

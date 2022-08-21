@@ -11,6 +11,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 
 import { DevOverviewModule } from './dev-overview/dev-overview.module';
 import { HomePageModule } from './home-page/home-page.module';
+import { YoutubeOverviewModule } from './youtube-overview/youtube-overview.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomePageModule } from './home-page/home-page.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     DevOverviewModule,
-    HomePageModule
+    HomePageModule,
+    YoutubeOverviewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

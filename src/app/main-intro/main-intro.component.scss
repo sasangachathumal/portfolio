@@ -3,7 +3,7 @@
   height: 90vh;
   .container-fluid {
     height: inherit;
-    .row {
+    .main-row {
       height: inherit;
     }
   }
@@ -17,6 +17,10 @@
 .info-container {
   padding: 0 40px 0 40px;
   height: inherit;
+  display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
   .name {
     color: mediumturquoise;
   }
@@ -31,6 +35,36 @@
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
     font-weight: 100;
+  }
+}
+
+.contact-container {
+  a {
+    padding: 0px 12px;
+    font-size: 32px;
+    color: var(--contact-link-default);
+    cursor: pointer;
+
+    &:hover {
+      &.github {
+        color: var(--contact-link-github);
+      }
+      &.linkedin {
+        color: var(--contact-link-linkedin);
+      }
+      &.twitter {
+        color: var(--contact-link-twitter);
+      }
+      &.youtube {
+        color: var(--contact-link-youtube);
+      }
+      &.facebook {
+        color: var(--contact-link-facebook);
+      }
+      &.email {
+        color: var(--contact-link-email);
+      }
+    }
   }
 }
 

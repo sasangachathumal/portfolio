@@ -1,38 +1,73 @@
 import {
-  trigger,
-  group,
-  style,
-  query,
-  animate,
-  transition,
-  animateChild,
-  // ...
+  animate, animateChild, group, query, style, transition, trigger
 } from '@angular/animations';
 
 export const slideInAnimation =
   trigger('routeAnimations', [
-    transition('HomePage <=> DevPage', [
-      style({ position: 'relative' }),
-      query(':enter, :leave', [
-        style({
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%'
-        })
-      ]),
-      query(':enter', [
-        style({ left: '-100%' })
-      ]),
-      query(':leave', animateChild()),
+    transition('DevPage => HomePage', [
+      query(':enter, :leave', style({ position: 'fixed', width: '100%' }), { optional: true }),
       group([
-        query(':leave', [
-          animate('300ms ease-out', style({ left: '100%' }))
-        ]),
-        query(':enter', [
-          animate('300ms ease-out', style({ left: '0%' }))
-        ])
+        query(':enter', [style({ transform: 'translateX(-100%)' }), animate('.3s ease-out', style({ transform: 'translateX(0%)' }))], {
+          optional: true,
+        }),
+        query(':leave', [style({ transform: 'translateX(0%)' }), animate('.3s ease-out', style({ transform: 'translateX(100%)' }))], {
+          optional: true,
+        }),
       ]),
-      query(':enter', animateChild()),
+    ]),
+    transition('youtubePage => HomePage', [
+      query(':enter, :leave', style({ position: 'fixed', width: '100%' }), { optional: true }),
+      group([
+        query(':enter', [style({ transform: 'translateX(-100%)' }), animate('.3s ease-out', style({ transform: 'translateX(0%)' }))], {
+          optional: true,
+        }),
+        query(':leave', [style({ transform: 'translateX(0%)' }), animate('.3s ease-out', style({ transform: 'translateX(100%)' }))], {
+          optional: true,
+        }),
+      ]),
+    ]),
+    transition('youtubePage => DevPage', [
+      query(':enter, :leave', style({ position: 'fixed', width: '100%' }), { optional: true }),
+      group([
+        query(':enter', [style({ transform: 'translateX(-100%)' }), animate('.3s ease-out', style({ transform: 'translateX(0%)' }))], {
+          optional: true,
+        }),
+        query(':leave', [style({ transform: 'translateX(0%)' }), animate('.3s ease-out', style({ transform: 'translateX(100%)' }))], {
+          optional: true,
+        }),
+      ]),
+    ]),
+    transition('HomePage => DevPage', [
+      query(':enter, :leave', style({ position: 'fixed', width: '100%' }), { optional: true }),
+      group([
+        query(':enter', [style({ transform: 'translateX(100%)' }), animate('.3s ease-out', style({ transform: 'translateX(0%)' }))], {
+          optional: true,
+        }),
+        query(':leave', [style({ transform: 'translateX(0%)' }), animate('.3s ease-out', style({ transform: 'translateX(-100%)' }))], {
+          optional: true,
+        }),
+      ]),
+    ]),
+    transition('HomePage => youtubePage', [
+      query(':enter, :leave', style({ position: 'fixed', width: '100%' }), { optional: true }),
+      group([
+        query(':enter', [style({ transform: 'translateX(100%)' }), animate('.3s ease-out', style({ transform: 'translateX(0%)' }))], {
+          optional: true,
+        }),
+        query(':leave', [style({ transform: 'translateX(0%)' }), animate('.3s ease-out', style({ transform: 'translateX(-100%)' }))], {
+          optional: true,
+        }),
+      ]),
+    ]),
+    transition('DevPage => youtubePage', [
+      query(':enter, :leave', style({ position: 'fixed', width: '100%' }), { optional: true }),
+      group([
+        query(':enter', [style({ transform: 'translateX(100%)' }), animate('.3s ease-out', style({ transform: 'translateX(0%)' }))], {
+          optional: true,
+        }),
+        query(':leave', [style({ transform: 'translateX(0%)' }), animate('.3s ease-out', style({ transform: 'translateX(-100%)' }))], {
+          optional: true,
+        }),
+      ]),
     ])
   ]);
