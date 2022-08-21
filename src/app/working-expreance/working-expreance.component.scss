@@ -1,41 +1,195 @@
 .working-expreance {
   font-family: "eurostile", sans-serif;
-  padding: 4rem 1.5rem;
+  padding: 2rem 1.5rem;
   .title {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     font-weight: 800;
     letter-spacing: 1.5px;
   }
+
   .exp-card {
-    width: 35% !important;
-    padding: 12px;
-    border: 2px solid mediumturquoise;
-    box-shadow: 5px 6px 17px 1px rgb(0 0 0 / 10%);
-    .card-body {
-      .title-containr {
-        .title {
-          margin-bottom: 0;
-          font-weight: 800;
-          letter-spacing: 1px;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    border: none;
+    box-shadow: 0px 0px 17px 1px rgb(0 0 0 / 10%);
+    font-family: "eurostile", sans-serif;
+    border-radius: 12px;
+    .company-logo-container {
+      &.practera {
+        .company-logo {
+          width: 10rem;
         }
+      }
+      .info {
+        vertical-align: middle;
+        margin: auto;
+        margin-left: 2rem;
+        .name {
+          font-weight: bold;
+        }
+      }
+      .company-logo {
+        margin-top: 1rem;
+        width: 6rem;
+        margin-bottom: 1rem;
+        margin: auto;
+      }
+    }
+    .title {
+      margin-bottom: 0;
+      font-weight: 800;
+      letter-spacing: 1px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    }
+    h5 {
+      font-family: "eurostile", sans-serif;
+      letter-spacing: 1px;
+      font-weight: 100;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .path-container {
+    .line {
+      height: 12rem;
+      width: 2px;
+      background: #d1d6e6;
+    }
+    .dot {
+      width: 20px;
+      height: 20px;
+      background: #d1d6e6;
+      border-radius: 50%;
+      position: absolute;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .exp-row-start, .exp-row-end {
+    justify-content: center !important;
+  }
+  .path-container {
+    display: none;
+  }
+  .exp-card {
+    margin-bottom: 2.5rem;
+    &.desktop {
+      display: none;
+    }
+    &.mobile {
+      display: block;
+      .image-container {
+        margin-bottom: 1.5rem;
         .company-logo-container {
-          height: 21rem;
-          .company-logo {
-            margin-top: 2rem;
-            width: 80%;
-            margin-bottom: 2rem;
-            &.populo {
-              width: 40%;
+          &.practera {
+            .company-logo {
+              width: 12rem;
             }
           }
         }
       }
-      .detail-containr {
-        h5 {
-          letter-spacing: 1px;
+      .detail-container {
+        .info {
+          h5 {
+            font-size: 1rem;
+          }
         }
       }
     }
   }
+}
+
+@media (min-width: 576px) {
+  .exp-row-start, .exp-row-end {
+    justify-content: center !important;
+  }
+  .path-container {
+    display: none;
+  }
+  .exp-card {
+    margin-bottom: 2.5rem;
+    &.desktop {
+      display: none;
+    }
+    &.mobile {
+      display: block;
+      .image-container {
+        margin-bottom: 1.5rem;
+        .company-logo-container {
+          &.practera {
+            .company-logo {
+              width: 12rem;
+            }
+          }
+        }
+      }
+      .detail-container {
+        .info {
+          h5 {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .exp-row-start, .exp-row-end {
+    justify-content: center !important;
+  }
+  .path-container {
+    display: none;
+  }
+  .exp-card {
+    margin-bottom: 2.5rem;
+    &.desktop {
+      display: none;
+    }
+    &.mobile {
+      display: block;
+      .image-container {
+        margin-bottom: 1.5rem;
+        .company-logo-container {
+          &.practera {
+            .company-logo {
+              width: 12rem;
+            }
+          }
+        }
+      }
+      .detail-container {
+        .info {
+          h5 {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .exp-row-start {
+    justify-content: flex-start !important;
+  }
+
+  .exp-row-end {
+    justify-content: flex-end !important;
+  }
+
+  .path-container {
+    display: block;
+  }
+
+  .exp-card {
+    margin-bottom: 0;
+    &.desktop {
+      display: block;
+    }
+    &.mobile {
+      display: none;
+    }
+  }
+
 }

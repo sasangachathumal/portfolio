@@ -1,9 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { OverviewPageComponent } from './overview-page/overview-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-  { path: '', component: OverviewPageComponent}
+  {
+    path: '',
+    loadChildren: './home-page/home-page.module#HomePageModule',
+    data: {animation: 'HomePage'}
+  },
+  {
+    path: 'dev',
+    loadChildren: './dev-overview/dev-overview.module#DevOverviewModule',
+    data: {animation: 'DevPage'}
+  },
+  {
+    path: 'youtube',
+    loadChildren: './youtube-overview/youtube-overview.module#YoutubeOverviewModule',
+    data: {animation: 'youtubePage'}
+  }
 ];
 
 @NgModule({

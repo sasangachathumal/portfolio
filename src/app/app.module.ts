@@ -3,26 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OverviewPageComponent } from './overview-page/overview-page.component';
-import { MainIntroComponent } from './main-intro/main-intro.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { MySkilsComponent } from './my-skils/my-skils.component';
-import { WorkingExpreanceComponent } from './working-expreance/working-expreance.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { FooterComponent } from './footer/footer.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+
+import { DevOverviewModule } from './dev-overview/dev-overview.module';
+import { HomePageModule } from './home-page/home-page.module';
+import { YoutubeOverviewModule } from './youtube-overview/youtube-overview.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OverviewPageComponent,
-    MainIntroComponent,
-    AboutMeComponent,
-    MySkilsComponent,
-    WorkingExpreanceComponent,
-    FooterComponent
+    FooterComponent,
+    NavigationBarComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    DevOverviewModule,
+    HomePageModule,
+    YoutubeOverviewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
