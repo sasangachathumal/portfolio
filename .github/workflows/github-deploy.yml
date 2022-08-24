@@ -67,6 +67,8 @@ jobs:
       #   id: check-changes
 
       - name: commit changes
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run:  |
           git add .
           git commit -am 'Build Ready to release :)'
