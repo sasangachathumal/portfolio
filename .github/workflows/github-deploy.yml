@@ -4,6 +4,9 @@ name: sasanga portfolio deploy
 
 #Event Trigger for this Workflow
 
+on:
+  workflow_dispatch:
+
 #Jobs to perform based on event occurred
 
 jobs:
