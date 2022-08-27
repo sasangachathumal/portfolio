@@ -4,11 +4,6 @@ name: sasanga portfolio deploy
 
 #Event Trigger for this Workflow
 
-on:
-  workflow_dispatch:
-  push:
-    branches: [ 'trunk' ]
-
 #Jobs to perform based on event occurred
 
 jobs:
@@ -70,4 +65,4 @@ jobs:
         run:  |
           git add .
           git commit -am 'Build Ready to release :)'
-          git push origin trunk
+          git push origin ${{ github.ref_name }}
