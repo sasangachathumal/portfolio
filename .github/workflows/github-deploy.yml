@@ -6,7 +6,7 @@ name: sasanga portfolio deploy
 
 on:
   workflow_dispatch:
-  inputs:
+    inputs:
       BRANCH_NAME:
         description: 'Branch need to deploy'
         required: true
