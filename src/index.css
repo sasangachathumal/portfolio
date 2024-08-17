@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url('./assets/bg3.png'), #1E2022;
+  background-size: cover;
+}
+
+/* Styles the scrollbar track (part the thumb moves within) */
+::-webkit-scrollbar {
+  width: 10px; /* for vertical scrollbars */
+  height: 10px; /* for horizontal scrollbars */
+}
+
+/* Styles the draggable part of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #E09145; /* thumb color */
+  border-radius: 10px; /* roundness of the thumb */
+  outline: 2px solid #E09145;
+}
+
+/* Styles the part of the scrollbar track that is not being interacted with */
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+.company-details-practera {
+  background: url(./assets/expbg1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.company-details-populo {
+  background: url(./assets/expbg2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-image-container {
+  width: 48rem;
+  height: 24rem;
+  overflow-y: auto;
+}
+
+.project-item .hide {
+  /* display: none; */
+  visibility: hidden;
+}
+
+.project-item .show{
+  /* display: block; */
+  visibility: visible;
+}
