@@ -56,7 +56,7 @@ function ProjectHome() {
           </div>
         </div>
 
-        <div className="flex flex-row h-full px-20">
+        <div className="flex flex-row h-full px-4">
           <ProjectDetail projectObj={projectList[activeIndex]} />
         </div>
       </div>

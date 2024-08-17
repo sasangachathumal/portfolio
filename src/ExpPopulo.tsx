@@ -17,7 +17,7 @@ function ExpPopulo() {
                 Associate Software Engineer
               </p>
               <p className="font-robotoCondensed text-2xl text-primary-white sm:text-sm md:text-base xl:text-2xl">
-                2016 - 2018
+                June 2016 - 2018
               </p>
             </div>
             <div>

@@ -17,7 +17,7 @@ function ExpPractera() {
                 Software Developer
               </p>
               <p className="font-robotoCondensed text-2xl text-primary-white sm:text-sm md:text-base xl:text-2xl">
-                2018 - 2024
+                July 2018 - 2024
               </p>
             </div>
             <div>

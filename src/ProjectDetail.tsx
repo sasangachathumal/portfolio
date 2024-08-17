@@ -48,6 +48,7 @@ function ProjectDetail(props: {projectObj: ProjectObj}) {
           </IconContext.Provider>
         </div>
         <div className="project-image-container rounded-xl">
+        {/* {props.projectObj.image} */}
           <img
             src={props.projectObj.image}
             className="rounded-xl  object-cover"

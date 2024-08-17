@@ -17,7 +17,7 @@ function ExpPopulo() {
                 Lead Software Engineer
               </p>
               <p className="font-robotoCondensed text-2xl text-primary-white sm:text-sm md:text-base xl:text-2xl">
-                2024 - present
+                September 2024 - present
               </p>
             </div>
             <div>
