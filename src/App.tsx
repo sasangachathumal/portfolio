@@ -1,9 +1,10 @@
 import About from "./About";
+import EduProjectsHome from "./EduProjectsHome";
 import ExpIFS from "./ExpIFS";
 import ExpPopulo from "./ExpPopulo";
 import ExpPractera from "./ExpPractera";
 import Home from "./Home";
-import ProjectHome from "./ProjectsHome";
+import ProProjectsHome from "./ProProjectsHome";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
             <ExpIFS/>
             <ExpPractera />
             <ExpPopulo />
-            <ProjectHome />
+            <ProProjectsHome />
+            <EduProjectsHome />
           </div>
         </div>
       </div>

@@ -6,11 +6,11 @@ const projectList = [
   {
     id: "P1",
     name: "Portfolio",
-    description: "",
+    description: "This is the my portfolio website that I build to showcase my skills and experiences. I have utilizing ReactJs, TailwindCSS, TypeScript as tools to build this website.",
     techStack: ["react", "typeScript", "tailwind", "github"],
     image: portfolioImg,
-    githubUrl: "#",
-    siteUrl: "#",
+    githubUrl: "https://github.com/sasangachathumal/portfolio",
+    siteUrl: "https://sasangachathumal.github.io/portfolio/",
     role: "",
   },
   {
@@ -28,7 +28,7 @@ const projectList = [
     id: "P3",
     name: "Wall St. Rank",
     description:
-      "Wall St. Rank is a financial services platform providing daily stock rankings, target price predictions, and analyst-vetted stock ideas. Involved in initial development work of the platform as a frontend developer and work on internal components and enhancing the UI of the web application.",
+      "Wall St. Rank is a financial services platform providing daily stock rankings, target price predictions, and analyst-vetted stock ideas. Involved in initial development work of the platform as a freelance frontend developer and work on internal components and enhancing the UI of the web application.",
     techStack: ["react", "typeScript", "tailwind", "bitbucket"],
     image: wallstImg,
     githubUrl: "#",

@@ -6,6 +6,8 @@ import {
   SiAngular,
   SiBitbucket,
   SiBootstrap,
+  SiCodeigniter,
+  SiCsharp,
   SiCss3,
   SiFirebase,
   SiGit,
@@ -16,12 +18,13 @@ import {
   SiJavascript,
   SiJira,
   SiLaravel,
+  SiMicrosoftsqlserver,
   SiMysql,
   SiPhp,
   SiPusher,
   SiReact,
   SiTailwindcss,
-  SiTypescript,
+  SiTypescript
 } from "react-icons/si";
 
 export interface TechStackProp {
@@ -37,6 +40,24 @@ function TechStack(techStackProp: TechStackProp) {
   let iconDivClass = "";
   const stackIcons = techStackProp.stackList.map((stack) => {
     switch (stack) {
+      case "mssql":
+        return (
+          <div className={techClassNames}>
+            <SiMicrosoftsqlserver />
+          </div>
+        );
+      case "c#":
+        return (
+          <div className={techClassNames}>
+            <SiCsharp />
+          </div>
+        );
+      case "codeigniter":
+        return (
+          <div className={techClassNames}>
+            <SiCodeigniter />
+          </div>
+        );
       case "laravel":
         return (
           <div className={techClassNames}>

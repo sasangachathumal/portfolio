@@ -1,5 +1,5 @@
 import { IconContext } from "react-icons";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillMediumSquare } from "react-icons/ai";
 import { FaGlobe } from "react-icons/fa";
 
 function Home() {
@@ -8,15 +8,18 @@ function Home() {
       <div className="w-screen flex flex-row justify-center gap-10 h-full m-auto">
         <div className="w-30 flex flex-col space-y-6">
           <IconContext.Provider value={{ color: "#E09145", size: "40" }}>
-            <div className="border-2 rounded-md border-primary p-1 cursor-pointer">
+            <a href="https://www.linkedin.com/in/sasanga-chathumal/" className="border-2 rounded-md border-primary p-1 cursor-pointer">
               <AiFillLinkedin />
-            </div>
-            <div className="border-2 rounded-md border-primary p-1 cursor-pointer">
+            </a>
+            <a href="https://github.com/sasangachathumal" className="border-2 rounded-md border-primary p-1 cursor-pointer">
               <AiFillGithub />
-            </div>
-            <div className="border-2 rounded-md border-primary p-1 cursor-pointer">
+            </a>
+            <a href="https://www.importantcodes.com/" className="border-2 rounded-md border-primary p-1 cursor-pointer">
               <FaGlobe />
-            </div>
+            </a>
+            <a href="https://medium.com/@chathumal.sasanga" className="border-2 rounded-md border-primary p-1 cursor-pointer">
+              <AiFillMediumSquare />
+            </a>
           </IconContext.Provider>
         </div>
         <div className="w-68">

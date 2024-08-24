@@ -43,35 +43,33 @@ function ExpPractera() {
               Practera | Sydney, Australia (Remote)
             </p>
             <p className="font-roboto text-base text-primary-white text-justify sm:text-sm md:text-base xl:text-base">
-              Practera is a leading experiential education technology company
-              founded in 2010 and based in Sydney, Australia. The platform
-              provides a comprehensive solution for universities, employers, and
-              governments to offer students real-world experiences through
-              projects, internships, and credentialing programs.
+              Practera, founded in 2010 in Sydney, Australia, is an experiential
+              education technology company that helps universities, employers,
+              and governments offer students real-world experiences through
+              projects and internships.
             </p>
             <p className="font-roboto text-base text-primary-white text-justify sm:text-sm md:text-base xl:text-base">
-              During my tenure at Practera from June 2018 to August 2024, I
-              played a pivotal role in the development and enhancement of
-              various web applications. A significant contribution was the
-              implementation of a dynamic real-time chat module using Angular,
-              Ionic, and Pusher. This feature improved communication within the
-              platform, providing a seamless experience for users. I also
-              enhanced the performance of existing applications by leveraging
-              RxJS operators such as Observables and BehaviorSubject, ensuring
-              efficient and responsive functionality.
+              During my time at Practera from June 2018 to August 2024, I
+              significantly contributed to the development and enhancement of
+              various web applications. A key achievement was the implementation
+              of a dynamic real-time chat module using Angular, Ionic, and
+              Pusher, which enhanced communication within the platform and
+              provided users with a seamless experience. I also improved the
+              performance of existing applications by leveraging RxJS operators
+              such as Observables and BehaviorSubject, ensuring that the
+              applications were both efficient and responsive.
             </p>
             <p className="font-roboto text-base text-primary-white text-justify sm:text-sm md:text-base xl:text-base">
-              I worked in multiple projects, including the development of a global
-              authentication module with multi-factor authentication (MFA). This
-              project was critical for enhancing the security of Practera's
-              applications and demonstrated my ability to deliver crucial
-              features on short notice with minimal bugs. Additionally, I worked
-              on the "Cutie" project, which involved creating distinct features
-              like Admin Chat and an onboarding process. These components were
-              built using Angular, Ionic, Bootstrap, Pusher, and the HubSpot API
-              and were seamlessly integrated into the main Practera admin
-              console. My work showcased my adaptability and efficiency in
-              developing robust solutions across diverse projects.
+              In addition to these contributions, I worked on several critical
+              projects, including the development of a global authentication
+              module with multi-factor authentication (MFA), which enhanced the
+              security of Practera's applications. I also played a key role in
+              the "Cutie" project, where I developed distinct features like
+              Admin Chat and an onboarding process, using technologies such as
+              Angular, Ionic, Bootstrap, Pusher, and the HubSpot API. These
+              components were seamlessly integrated into the main Practera admin
+              console, showcasing my adaptability and efficiency in delivering
+              robust solutions across diverse projects.
             </p>
           </div>
         </div>

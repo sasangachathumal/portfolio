@@ -3,8 +3,8 @@ import TechStack from "./TechStack";
 function About() {
   return (
     <>
-      <div className="w-screen flex flex-row justify-center gap-10 h-full px-16">
-        <div className="w-1/2 flex flex-col space-y-4 flex-wrap">
+      <div className="w-screen flex flex-row justify-center gap-8 h-full px-16">
+        <div className="w-1/2 flex flex-col space-y-4 flex-wrap mb-2">
           <div className="font-righteous text-9xl text-primary sm:text-sm md:text-base xl:text-6xl">
             <p>About Me .</p>
           </div>

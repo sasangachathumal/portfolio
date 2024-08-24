@@ -14,7 +14,7 @@ interface ProjectObj {
   role: string;
 }
 
-function ProjectDetail(props: {projectObj: ProjectObj}) {
+function ProProjectDetail(props: { projectObj: ProjectObj }) {
   return (
     <>
       <div className="w-1/2 px-16 flex flex-col">
@@ -37,18 +37,25 @@ function ProjectDetail(props: {projectObj: ProjectObj}) {
       <div className="w-1/2 flex flex-col">
         <div className="flex flex-row justify-start mb-6">
           <IconContext.Provider value={{ color: "#E09145", size: "24" }}>
-            <div className="text-primary text-xl mr-4 flex flex-row">
-              <p>GitHub</p>
-              <MdOpenInNew />
-            </div>
-            <div className="text-primary text-xl ml-4 flex flex-row">
-              <p>Official Site</p>
-              <MdOpenInNew />
-            </div>
+            {props.projectObj.githubUrl != "#" ? (
+              <div className="text-primary text-xl mr-4 flex flex-row">
+                <a href={props.projectObj.githubUrl}>GitHub</a>
+                <MdOpenInNew />
+              </div>
+            ) : (
+              ""
+            )}
+            {props.projectObj.siteUrl != "#" ? (
+              <div className="text-primary text-xl ml-4 flex flex-row">
+                <a href={props.projectObj.siteUrl}>Official Site</a>
+                <MdOpenInNew />
+              </div>
+            ) : (
+              ""
+            )}
           </IconContext.Provider>
         </div>
         <div className="project-image-container rounded-xl">
-        {/* {props.projectObj.image} */}
           <img
             src={props.projectObj.image}
             className="rounded-xl  object-cover"
@@ -60,4 +67,4 @@ function ProjectDetail(props: {projectObj: ProjectObj}) {
   );
 }
 
-export default ProjectDetail;
+export default ProProjectDetail;

@@ -2,10 +2,10 @@ import { useState } from "react";
 import { IconContext } from "react-icons";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-import ProjectDetail from "./ProjectDetail";
-import projectList from "./data/ProjectData";
+import ProProjectDetail from "./ProProjectDetail";
+import projectList from "./data/ProProjectData";
 
-function ProjectHome() {
+function ProProjectsHome() {
   const projectListSize = projectList.length;
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -36,7 +36,7 @@ function ProjectHome() {
               <p>Projectes.</p>
             </div>
             <div className="px-20 font-roboto text-primary sm:text-sm md:text-base xl:text-3xl mt-2">
-              <p>Personal projectes</p>
+              <p>Professional projectes</p>
             </div>
           </div>
           <div className="w-full ml-10">
@@ -57,11 +57,11 @@ function ProjectHome() {
         </div>
 
         <div className="flex flex-row h-full px-4">
-          <ProjectDetail projectObj={projectList[activeIndex]} />
+          <ProProjectDetail projectObj={projectList[activeIndex]} />
         </div>
       </div>
     </>
   );
 }
 
-export default ProjectHome;
+export default ProProjectsHome;

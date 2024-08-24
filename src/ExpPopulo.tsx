@@ -9,7 +9,7 @@ function ExpPopulo() {
         </div>
         <div className="flex flex-row h-full">
           <div className="flex flex-col space-y-6 flex-wrap w-1/2">
-            <div className="company-details-practera w-1/2 p-11">
+            <div className="company-details-practera w-2/3 p-11">
               <p className="font-robotoCondensed text-6xl text-primary-white sm:text-sm md:text-base xl:text-5xl mb-4">
                 Populo
               </p>
@@ -38,7 +38,7 @@ function ExpPopulo() {
               />
             </div>
           </div>
-          <div className="flex flex-col space-y-6 flex-wrap w-1/2">
+          <div className="flex flex-col space-y-2 flex-wrap w-1/2">
             <p className="font-roboto font-bold text-xl text-primary-white sm:text-sm md:text-base xl:text-xl">
               Populo (Pvt) Ltd | Colombo, Sri Lanka
             </p>
