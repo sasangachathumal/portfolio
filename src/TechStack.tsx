@@ -9,6 +9,7 @@ import {
   SiCodeigniter,
   SiCsharp,
   SiCss3,
+  SiFigma,
   SiFirebase,
   SiGit,
   SiGithub,
@@ -40,6 +41,12 @@ function TechStack(techStackProp: TechStackProp) {
   let iconDivClass = "";
   const stackIcons = techStackProp.stackList.map((stack) => {
     switch (stack) {
+      case "figma":
+        return (
+          <div className={techClassNames}>
+            <SiFigma />
+          </div>
+        );
       case "mssql":
         return (
           <div className={techClassNames}>

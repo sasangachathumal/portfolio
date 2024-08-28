@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IconContext } from "react-icons";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-import ProProjectDetail from "./ProProjectDetail";
+import ProjectDetail from "./ProjectDetail";
 import projectList from "./data/ProProjectData";
 
 function ProProjectsHome() {
@@ -57,7 +57,7 @@ function ProProjectsHome() {
         </div>
 
         <div className="flex flex-row h-full px-4">
-          <ProProjectDetail projectObj={projectList[activeIndex]} />
+          <ProjectDetail projectObj={projectList[activeIndex]} />
         </div>
       </div>
     </>

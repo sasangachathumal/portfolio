@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IconContext } from "react-icons";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-import EduProjectDetail from "./EduProjectDetail";
+import ProjectDetail from "./ProjectDetail";
 import projectList from "./data/EduProjectData";
 
 function EduProjectsHome() {
@@ -57,7 +57,7 @@ function EduProjectsHome() {
         </div>
 
         <div className="flex flex-row h-full px-4 justify-center">
-          <EduProjectDetail projectObj={projectList[activeIndex]} />
+          <ProjectDetail projectObj={projectList[activeIndex]} />
         </div>
       </div>
     </>

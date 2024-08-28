@@ -14,7 +14,7 @@ interface ProjectObj {
   role: string;
 }
 
-function ProProjectDetail(props: { projectObj: ProjectObj }) {
+function ProjectDetail(props: { projectObj: ProjectObj }) {
   return (
     <>
       <div className="w-1/2 px-16 flex flex-col">
@@ -67,4 +67,4 @@ function ProProjectDetail(props: { projectObj: ProjectObj }) {
   );
 }
 
-export default ProProjectDetail;
+export default ProjectDetail;
